@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Tic Tac Toe</h1>
-  <div class="board">
-    <div class="cell" onclick="placeSymbol(0)"></div>
-    <div class="cell" onclick="placeSymbol(1)"></div>
-    <div class="cell" onclick="placeSymbol(2)"></div>
-    <div class="cell" onclick="placeSymbol(3)"></div>
-    <div class="cell" onclick="placeSymbol(4)"></div>
-    <div class="cell" onclick="placeSymbol(5)"></div>
-    <div class="cell" onclick="placeSymbol(6)"></div>
-    <div class="cell" onclick="placeSymbol(7)"></div>
-    <div class="cell" onclick="placeSymbol(8)"></div>
-  </div>
-  <button onclick="resetBoard()">Reset</button>
-  <script src="script.js"></script>
+   <div class="wrapper">
+       <div class="container">
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+       </div>
+       <button id="restart">Restart</button>
+   </div>
+   <div class="popup hide">
+       <p id="message">Sample Message</p>
+       <button id="new-game">New Game</button>
+   </div>
+   
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
